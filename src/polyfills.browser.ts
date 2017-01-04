@@ -2,7 +2,8 @@
 
 // Polyfills
 
-// import 'ie-shim'; // Internet Explorer 9 support
+import 'ie-shim'; // Internet Explorer 9 support
+import 'classlist.js';
 
 
 // import 'core-js/es6';
@@ -32,6 +33,9 @@ import 'zone.js/dist/zone';
 
 // Typescript emit helpers polyfill
 import 'ts-helpers';
+
+// Web Animations
+import 'web-animations-js';
 
 if ('production' === ENV) {
   // Production
