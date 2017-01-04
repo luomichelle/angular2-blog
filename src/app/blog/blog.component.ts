@@ -2,13 +2,17 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Article } from './article';
 import { ArticleService } from './article.service';
+import { fadeIn } from '../animations/fade-in';
 
 @Component({
   selector: 'blog',
   styleUrls: [
-    'blog.component.scss'
+    './blog.component.scss'
   ],
-  templateUrl: 'blog.component.html'
+  templateUrl: './blog.component.html',
+  animations: [
+    fadeIn
+  ]
 })
 export class BlogComponent {
   localState: any;

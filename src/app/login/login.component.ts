@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { User } from './user';
+import { fadeIn } from '../animations/fade-in';
 
 @Component({
   selector: 'login',
   styleUrls: [
     './login.component.scss'
   ],
-  templateUrl: './login.component.html'
+  templateUrl: './login.component.html',
+  animations: [
+    fadeIn
+  ]
 })
 export class LoginComponent {
   localState: any;

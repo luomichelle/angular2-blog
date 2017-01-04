@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { AppState } from '../app.service';
 import { Title } from './title';
 import { XLarge } from './x-large';
+import { fadeIn } from '../animations/fade-in';
 
 @Component({
   // The selector is what angular internally uses
@@ -16,7 +17,10 @@ import { XLarge } from './x-large';
   // Our list of styles in our component. We may add more to compose many styles together
   styleUrls: [ './home.component.css' ],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  animations: [
+    fadeIn
+  ]
 })
 export class HomeComponent {
   // Set our default values

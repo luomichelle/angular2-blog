@@ -5,6 +5,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
 
+// import { fadeIn } from './animations/fade-in';
+
 /*
  * App Component
  * Top Level Component
@@ -15,7 +17,10 @@ import { AppState } from './app.service';
   styleUrls: [
     'app.component.scss'
   ],
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  animations: [
+    // fadeIn
+  ]
 })
 export class AppComponent {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

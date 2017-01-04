@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { fadeIn } from '../animations/fade-in';
 
 @Component({
   selector: 'about',
   styleUrls: [
     './about.component.scss'
   ],
-  templateUrl: './about.component.html'
+  templateUrl: './about.component.html',
+  animations: [
+    fadeIn
+  ]
 })
 export class AboutComponent {
   localState: any;
