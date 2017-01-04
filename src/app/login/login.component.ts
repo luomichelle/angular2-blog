@@ -5,9 +5,9 @@ import { User } from './user';
 @Component({
   selector: 'login',
   styleUrls: [
-    'login.component.scss'
+    './login.component.scss'
   ],
-  templateUrl: 'login.component.html'
+  templateUrl: './login.component.html'
 })
 export class LoginComponent {
   localState: any;
@@ -55,8 +55,8 @@ export class LoginComponent {
     this.loginUser = new User(42, '', '', '');
   }
 
-  get diagnostic() { 
-    return JSON.stringify(this.loginUser); 
+  get diagnostic() {
+    return JSON.stringify(this.loginUser);
   }
 
 }
