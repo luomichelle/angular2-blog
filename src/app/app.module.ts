@@ -4,8 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
-import { MaterialModule } from '@angular/material';
+// import { MaterialModule } from '@angular/material';
 // import { AlertModule } from 'ng2-bootstrap';
+
+/**
+ * Feature Modules
+ */
+import { CoreModule } from './core/core.module';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -41,7 +46,9 @@ type StoreType = {
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
 @NgModule({
-  bootstrap: [ AppComponent ],
+  bootstrap: [
+    AppComponent
+  ],
   declarations: [
     AppComponent,
     LoginComponent,
@@ -53,6 +60,7 @@ type StoreType = {
   ],
   imports: [ // import Angular's modules
     // AlertModule.forRoot(),
+    CoreModule,
     BrowserModule,
     FormsModule,
     HttpModule,
