@@ -1,0 +1,62 @@
+<!-- wrap -->
+<div class="wrap">
+  <!-- header -->
+  <header class="header">
+    <nav class="navbar navbar-light">
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>-->
+      <a class="navbar-brand" [routerLink]=" ['/'] ">
+        <img class="d-inline-block align-top" style="width: 20px; height:20px;" src="{{angularclassLogo}}" alt="Logo">
+        AngularBlog
+      </a>
+      <ul class="nav navbar-nav float-xs-right">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="blog">Blog</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <!--<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
+            <a class="dropdown-item" routerLink="home" routerLinkActive="active">Home</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" routerLink="home" routerLinkActive="active">About</a>
+          </div>
+        </li>-->
+      </ul>
+      <!--<form class="form-inline float-xs-right">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+    </nav>
+  </header><!-- /header -->
+  <!--<alert type="success">hello</alert>-->
+  <!-- main -->
+  <main class="main">
+    <router-outlet></router-outlet>
+  </main><!-- /main -->
+</div><!-- /wrap -->
+<!-- footer -->
+<footer class="footer">
+	<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <code class="app-state">this.appState.state = {{ appState.state | json }}</code>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-sm-right" title="">
+          WebPack Angular 2 Blog by <i class="fa fa-github"></i>
+          <a [href]="url" target="_blank">
+            @EricThsi
+          </a>
+        </p>
+      </div>
+    </div>
+	</div>
+</footer><!-- /footer -->

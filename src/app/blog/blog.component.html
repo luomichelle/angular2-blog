@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Blog List</h1>
+  <article>
+    <ul class="list-unstyled article-list">
+      <li class="article-item" *ngFor="let article of articleList">
+        <header class="article-item-header">
+          <h4><a href="#">{{article.title}}</a></h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <i class="fa fa-calendar-o"></i> {{article.date | date:"yyyy/MM/dd"}}
+            </li>
+            - 
+            <li class="list-inline-item">
+              <i class="fa fa-user-circle"></i> {{article.author}} 
+            </li>
+          </ul>
+        </header>
+        <section class="article-item-content">
+          <p class="lead">{{article.content}}</p>
+        </section>
+        <footer class="article-item-footer">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <i class="fa fa-book"></i> {{article.read}}
+            </li>
+            -
+            <li class="list-inline-item">
+              <i class="fa fa-comment"></i> {{article.comment}}
+            </li>
+            -
+            <li class="list-inline-item">
+              <i class="fa fa-heart"></i> {{article.love}}
+            </li>
+          </ul>
+        </footer>
+      </li>
+    </ul>
+  </article>
+</div>

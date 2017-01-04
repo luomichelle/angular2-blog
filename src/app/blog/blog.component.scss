@@ -1,0 +1,13 @@
+.article-item {
+  padding-bottom: 1rem;
+  & + .article-item {
+    padding-top: 1.25rem;
+    border-top: 1px dashed #ccc;
+  }
+  .article-item-header {
+    margin-bottom: 0.25rem;
+  }
+  .article-item-footer {
+    text-align: right;
+  }
+}

@@ -1,0 +1,16 @@
+/**
+ * Main style.
+ *
+ */
+html,
+body {
+  height: 100%;
+}
+
+body,
+app-root {
+  position: relative;
+  font: 12px/1.5em "Helvetica Neue",Helvetica,"Hiragino Sans GB","Segoe UI","Microsoft Yahei",Tahoma,Arial,STHeiti,sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}

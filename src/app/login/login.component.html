@@ -1,0 +1,50 @@
+<div class="container">
+  <code>{{diagnostic}}</code>
+  <form class="login-frm" (ngSubmit)="onSubmit()" #loginFrm="ngForm">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="form-group row">
+          <label for="ngbEmail" class="col-xs-3 col-form-label">Email</label>
+          <div class="col-xs-9">
+            <input type="email" class="form-control" id="ngbEmail" placeholder="Email"
+              required
+              [(ngModel)]="loginUser.email"
+              name="ngbEmail"
+              #ngbEmail="ngModel"
+            >
+            <div *ngIf="ngbEmail.errors && (ngbEmail.dirty || ngbEmail.touched)">
+              <p class="form-text text-danger" [hidden]="!ngbEmail.errors.required">
+                Email is required
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="form-group row">
+            <label for="ngbPsw" class="col-xs-3 col-form-label">Password</label>
+            <div class="col-xs-9">
+              <input type="password" class="form-control" id="ngbPsw" placeholder="Password" 
+                required
+                minlength="6"
+                [(ngModel)]="loginUser.password"
+                name="ngbPsw"
+                #ngbPsw="ngModel"
+              >
+              <div *ngIf="ngbPsw.errors && (ngbPsw.dirty || ngbPsw.touched)">
+                <p class="form-text text-danger" [hidden]="!ngbPsw.errors.required">
+                  Password is required
+                </p>
+                <p class="form-text text-danger" [hidden]="!ngbPsw.errors.minlength">
+                  Password must be at least 6 characters long.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6  col-xs-12">
+        <button type="submit" class="btn btn-success" [disabled]="!loginFrm.form.valid" (click)="login(); loginFrm.reset();">Login</button>
+      </div>
+    </div>
+  </form>
+</div>
