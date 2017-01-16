@@ -55,7 +55,13 @@ export class BlogComponent {
   }
 
   getArticles(): void {
-    this.articleService.getArticles().then(articles => this.articleList = articles);
+    this.articleService.getArticles()
+                      .subscribe(
+                        articles => this.articleList = articles,
+                        error => this.errorMessage = <any>error
+                      );
   }
+
+  private errorMessage () {}
 
 }
