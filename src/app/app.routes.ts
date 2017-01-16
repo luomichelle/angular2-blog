@@ -10,10 +10,6 @@ import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
   {
-    path: '',
-    component: HomeComponent
-  },
-  {
     path: 'login',
     component: LoginComponent
   },
@@ -32,6 +28,10 @@ export const ROUTES: Routes = [
   {
     path: 'detail',
     loadChildren: './+detail/index#DetailModule'
+  },
+  {
+    path: '',
+    component: HomeComponent
   },
   {
     path: '**',

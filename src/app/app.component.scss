@@ -63,26 +63,15 @@
 			background-color: #fff;
 		}
 	}
-	&.header-small {
-		padding: .1% 0;
-		background-color: #fff;
-		// background-color: rgba(255, 255, 255, .9);
-		border-bottom: 1px solid #ccc;
-		// transition(all .3s ease);
-		.logo {
-			margin-top: 15px;
-		}
-		.navbar-toggle {
-			.icon-bar {
-				background-color: #414141;
-			}
-		}
-		.navg {
-			& > li > a {
-				color: #414141;
-			}
-		}
-	}
+  .navbar-nav {
+    & > li {
+      & > a {
+        &.active {
+          color: rgba(0, 0, 0, .9);
+        }
+      }
+    }
+  }
 }
 
 /* Footer
