@@ -31,7 +31,7 @@ export class AboutComponent {
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);
     // if you're working with mock data you can also use http.get('assets/mock-data/mock-data.json')
-    this.asyncDataWithWebpack();
+    // this.asyncDataWithWebpack();
   }
   asyncDataWithWebpack() {
     // you can also async load mock data with 'es6-promise-loader'
