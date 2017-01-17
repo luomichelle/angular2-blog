@@ -353,7 +353,8 @@ module.exports = function (options) {
         $: 'jquery',
         jquery: 'jquery',
         "Tether": 'tether',
-        "window.Tether": "tether"
+        "window.Tether": "tether",
+        Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
       }),
     ],
 

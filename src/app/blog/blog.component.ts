@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Article } from './article';
 import { ArticleService } from './article.service';
 import { fadeIn } from '../animations/fade-in';
@@ -18,7 +18,10 @@ export class BlogComponent {
   localState: any;
   articleList: Article[];
 
-  constructor(private articleService: ArticleService, public route: ActivatedRoute) {
+  constructor(
+    private articleService: ArticleService,
+    private router: Router,
+    public route: ActivatedRoute) {
     // this.articleList = articleService.getArticles();
   }
 
@@ -63,5 +66,9 @@ export class BlogComponent {
   }
 
   private errorMessage () {}
+
+  onSelect(article: Article) {
+    this.router.navigate(['/article', article.id]);
+  }
 
 }
