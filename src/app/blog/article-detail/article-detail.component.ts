@@ -27,7 +27,7 @@ export class ArticleDetailComponent {
   }
 
   gotoBlog() {
-    this.router.navigate(['/blog']);
+    this.router.navigate(['/article']);
   }
 
 }
