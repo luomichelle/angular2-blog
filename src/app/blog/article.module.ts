@@ -23,4 +23,4 @@ import { ArticleRoutesModule } from './article-routes.module';
   ]
 })
 
-export class BlogModule {}
+export class ArticleModule {}

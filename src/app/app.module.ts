@@ -23,7 +23,7 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
-import { BlogModule } from './blog';
+import { ArticleModule } from './blog';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
@@ -63,7 +63,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    BlogModule,
+    ArticleModule,
     // MaterialModule.forRoot(),
     // RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
     RouterModule.forRoot(ROUTES)

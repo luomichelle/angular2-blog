@@ -1,1 +1,1 @@
-export * from './blog.module';
+export * from './article.module';
