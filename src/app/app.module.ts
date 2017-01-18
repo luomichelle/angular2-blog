@@ -27,7 +27,6 @@ import { BlogModule } from './blog';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
-import { ArticleService } from './blog/article.service';
 import { Logger } from './logger.service';
 
 // Application wide providers
@@ -72,7 +71,6 @@ type StoreType = {
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
     APP_PROVIDERS,
-    ArticleService,
     Logger
   ]
 })

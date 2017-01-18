@@ -7,9 +7,9 @@ import { fadeIn } from '../animations/fade-in';
 @Component({
   selector: 'blog',
   styleUrls: [
-    './blog.component.scss'
+    './article.component.scss'
   ],
-  templateUrl: './blog.component.html',
+  templateUrl: './article.component.html',
   animations: [
     fadeIn
   ]

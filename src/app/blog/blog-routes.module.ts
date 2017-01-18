@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BlogComponent } from './blog.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
-const blogRoutes: Routes = [
+const articleRoutes: Routes = [
   {
     path: 'article',
     component: BlogComponent
@@ -17,7 +17,7 @@ const blogRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(blogRoutes)
+    RouterModule.forChild(articleRoutes)
   ],
   exports: [
     RouterModule
