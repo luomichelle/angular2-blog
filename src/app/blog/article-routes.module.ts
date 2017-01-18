@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { BlogComponent } from './blog.component';
+import { ArticleComponent } from './article.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 const articleRoutes: Routes = [
   {
     path: 'article',
-    component: BlogComponent
+    component: ArticleComponent
   },
   {
     path: 'article/:id',
@@ -24,4 +24,4 @@ const articleRoutes: Routes = [
   ]
 })
 
-export class  BlogRoutesModule {}
+export class  ArticleRoutesModule {}

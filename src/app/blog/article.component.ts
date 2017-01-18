@@ -14,7 +14,7 @@ import { fadeIn } from '../animations/fade-in';
     fadeIn
   ]
 })
-export class BlogComponent {
+export class ArticleComponent {
   localState: any;
   articleList: Article[];
 
@@ -33,7 +33,7 @@ export class BlogComponent {
         this.localState = data.yourData;
       });
 
-    console.log('hello `Blog` component');
+    console.log('hello `Article` component');
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);
@@ -58,11 +58,12 @@ export class BlogComponent {
   }
 
   getArticles(): void {
-    this.articleService.getArticles()
-                      .subscribe(
-                        articles => this.articleList = articles,
-                        error => this.errorMessage = <any>error
-                      );
+    this.articleService
+        .getArticles()
+        .subscribe(
+          articles => this.articleList = articles,
+          error => this.errorMessage = <any>error
+        );
   }
 
   private errorMessage () {}
