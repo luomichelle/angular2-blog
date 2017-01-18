@@ -23,7 +23,7 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
-import { ArticleModule } from './blog';
+import { ArticleModule } from './article';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
