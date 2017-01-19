@@ -1,3 +1,22 @@
-<h1>Article Detail</h1>
-<h3>{{article | json}}</h3>
-<p><button (click)="gotoBlog()" class="btn btn-xs">Back</button></p>
+<div class="container">
+  <div class="row justify-content-end top-op-wrap">
+    <button (click)="gotoBlog()" class="btn btn-outline-secondary btn-sm pull-right">Back</button>
+  </div>
+  <h1>Article Detail <small>{{article | json}}</small></h1>
+  <ul class="list-inline">
+    <li class="list-inline-item">
+      <i class="fa fa-book"></i>Read {{article.read}}
+    </li>
+    -
+    <li class="list-inline-item">
+      <i class="fa fa-comment"></i>Comment {{article.comment}}
+    </li>
+    -
+    <li class="list-inline-item">
+      <i class="fa fa-heart"></i>Love {{article.love}}
+    </li>
+  </ul>
+  <p>
+    Article content here.
+  </p>
+</div>

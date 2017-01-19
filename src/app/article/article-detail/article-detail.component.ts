@@ -47,7 +47,7 @@ export class ArticleDetailComponent implements OnInit {
   }
 
   @HostBinding('style.position') get position() {
-    return 'absolute';
+    return 'relative';
   }
 
   article: Article;
