@@ -5,7 +5,7 @@ import { ArticleService } from './article.service';
 import { fadeIn } from '../animations/fade-in';
 
 @Component({
-  selector: 'blog',
+  selector: 'article-list',
   styleUrls: [
     './article.component.scss'
   ],

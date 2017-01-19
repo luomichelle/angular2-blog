@@ -7,7 +7,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Article } from '../article';
 
 @Component({
-  // selector: 'article-detail',
+  selector: 'article-detail',
   templateUrl: './article-detail.component.html',
   styleUrls: [
     './article-detail.component.scss'
