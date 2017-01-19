@@ -2,7 +2,7 @@
   <div class="row justify-content-end top-op-wrap">
     <button (click)="gotoBlog()" class="btn btn-outline-secondary btn-sm pull-right">Back</button>
   </div>
-  <h1>Article Detail <small>{{article | json}}</small></h1>
+  <h1>{{article.id}} <small>{{article | json}}</small></h1>
   <ul class="list-inline">
     <li class="list-inline-item">
       <i class="fa fa-book"></i>Read {{article.read}}
@@ -16,7 +16,50 @@
       <i class="fa fa-heart"></i>Love {{article.love}}
     </li>
   </ul>
-  <p>
-    Article content here.
-  </p>
+  <div Markdown>
+## Yarn -- 包管理工具
+Yarn是一个包（package）管理工具。它允许我们和世界其他的开发者使用和分享代码。Yarn 快速、安全以及稳定可靠。
+
+代码通过称为包（package，有时也代表一个模块）的方式进行分享和传播。一个包包含了其所功能所有的代码，并通过`package.json`文件来描述这个包。
+
+### Yarn的优点
+
+* 速度快
+  Yarn会缓存每一个它下载过的包。我们可以在离线条件下重新安装同一个包。同时由于使用了并行操作，yarn 可以最大的使用资源，使安装下载速度大大提高。
+* 安全
+  Yarn会使用校验码，在包代码执行前验证每个已经安装包的完整性。
+* 可靠
+  Yarn使用细致、简约的锁文件格式（lockfile format）和稳定的算法来安装包，保证在所有的目标系统中代码的安装和执行都是相同的。
+
+### 安装
+
+#### MacOS
+通过 [Homebrew package manager](http://brew.sh/)
+
+```bash
+brew update
+brew install yarn
+```
+
+检查 Yarn 是否安装成功：
+
+```bash
+yarn --version
+```
+
+
+#### Debian/Ubuntu Linux
+
+```bash
+sudo curl https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+简单快速的命令：
+
+```bash
+sudo apt-get update && sudo apt-get install yarn
+```
+
+  </div>
 </div>

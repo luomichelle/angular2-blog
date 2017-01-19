@@ -7,7 +7,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Article } from '../article';
 
 @Component({
-  selector: 'article-detail',
+  // selector: 'article-detail',
   templateUrl: './article-detail.component.html',
   styleUrls: [
     './article-detail.component.scss'
@@ -60,6 +60,7 @@ export class ArticleDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params
       .subscribe((article: Article) => this.article = article);
+    // TODO: Get article by param ID.
   }
 
   gotoBlog() {
