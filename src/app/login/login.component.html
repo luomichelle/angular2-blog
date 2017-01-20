@@ -1,7 +1,14 @@
 <div class="container" [@fadeIn]="void">
-  <h1>Login</h1>
-  <code>{{diagnostic}}</code>
-  <form class="login-frm" (ngSubmit)="onSubmit()" #loginFrm="ngForm">
+  <h1>
+    Login
+    <small>
+      <button (click)="login()"  *ngIf="!authService.isLoggedIn" class="btn btn-success btn-sm">Login</button>
+      <button (click)="logout()" *ngIf="authService.isLoggedIn" class="btn btn-danger btn-sm">Logout</button>  
+    </small>
+  </h1>
+  <p>{{message}}</p>
+  <!--<code>{{diagnostic}}</code>-->
+  <form class="login-frm" (ngSubmit)="onSubmit()" #loginFrm="ngForm" *ngIf="!authService.isLoggedIn">
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="form-group row">
