@@ -31,6 +31,8 @@ import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
 import { Logger } from './logger.service';
 
+import { AuthGuard } from './auth-guard.service';
+
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -74,7 +76,8 @@ type StoreType = {
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
     APP_PROVIDERS,
-    Logger
+    Logger,
+    AuthGuard
   ]
 })
 export class AppModule {

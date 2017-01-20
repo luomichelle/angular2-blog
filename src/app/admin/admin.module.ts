@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 
 import { AdminComponent } from './admin.component';
+import { AdminDashboardComponent } from './admin-dashboard.component';
 
 import { AdminRoutesModule } from './admin-routes.module';
 
@@ -11,7 +12,8 @@ import { AdminRoutesModule } from './admin-routes.module';
     AdminRoutesModule
   ],
   declarations: [
-    AdminComponent
+    AdminComponent,
+    AdminDashboardComponent
   ]
 })
 
