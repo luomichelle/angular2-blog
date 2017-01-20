@@ -32,6 +32,7 @@ import { XLarge } from './home/x-large';
 import { Logger } from './logger.service';
 
 import { AuthGuard } from './auth-guard.service';
+import { AuthService } from './auth.service';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -77,7 +78,8 @@ type StoreType = {
     ENV_PROVIDERS,
     APP_PROVIDERS,
     Logger,
-    AuthGuard
+    AuthGuard,
+		AuthService
   ]
 })
 export class AppModule {

@@ -3,12 +3,12 @@ import {SharedModule} from '../shared/shared.module';
 
 import {LoginComponent} from './login.component';
 
-import {routing} from './login.routing';
+import {loginRoutersModule } from './login-routes.module';
 
 @NgModule({
 	imports: [
 		SharedModule,
-    routing
+    loginRoutersModule
 	],
 	declarations: [
 		LoginComponent
