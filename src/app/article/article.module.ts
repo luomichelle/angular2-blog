@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 import { MarkdownModule } from 'angular2-markdown';
 
@@ -12,8 +11,7 @@ import { ArticleService } from './article.service';
 import { ArticleRoutesModule } from './article-routes.module';
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
+    SharedModule,
     MarkdownModule,
     ArticleRoutesModule
   ],

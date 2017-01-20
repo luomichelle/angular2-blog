@@ -17,13 +17,15 @@ import { CoreModule } from './core/core.module';
  */
 import { ENV_PROVIDERS } from './environment';
 import { ROUTES } from './app.routes';
+// Feature Module
+import { AdminModule } from './admin';
+import { ArticleModule } from './article';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
-import { ArticleModule } from './article';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
@@ -63,6 +65,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    AdminModule,
     ArticleModule,
     // MaterialModule.forRoot(),
     // RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
