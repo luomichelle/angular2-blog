@@ -13,22 +13,36 @@ export class AdminDashboardComponent {
     scaleShowVerticalLines: false,
     responsive: true
   };
-  public barChartLabels:string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  public barChartLabels:string[] = [
+    '2017/01/15',
+    '2017/01/16',
+    '2017/01/17',
+    '2017/01/18',
+    '2017/01/19',
+    '2017/01/20',
+    '2017/01/21'
+  ];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
 
   public barChartData:any[] = [
-    {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
-    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
+    {
+      data: [65, 59, 80, 81, 56, 55, 40],
+      label: 'Series A'
+    },
+    {
+      data: [28, 48, 40, 19, 86, 27, 90],
+      label: 'Series B'
+    }
   ];
 
   // events
   public chartClicked(e:any):void {
-    console.log(e);
+    // console.log(e);
   }
 
   public chartHovered(e:any):void {
-    console.log(e);
+    // console.log(e);
   }
 
   public randomize():void {

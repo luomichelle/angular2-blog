@@ -24,12 +24,12 @@ export class LoginComponent {
   }
 
   ngOnInit() {
-    this.route
-      .data
-      .subscribe((data: any) => {
-        // your resolved data from route
-        this.localState = data.yourData;
-      });
+    // this.route
+    //   .data
+    //   .subscribe((data: any) => {
+    //     // your resolved data from route
+    //     this.localState = data.yourData;
+    //   });
 
     console.log('hello `login` component');
   }

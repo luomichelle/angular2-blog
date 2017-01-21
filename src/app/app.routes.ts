@@ -12,10 +12,10 @@ export const ROUTES: Routes = [
     path: 'login',
     component: LoginComponent
   },
-   {
-    path: 'home',
-    component: HomeComponent
-  },
+  // {
+  //   path: 'home',
+  //   redirectTo: '/article'
+  // },
   {
     path: 'about',
     component: AboutComponent
