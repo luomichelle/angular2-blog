@@ -6,6 +6,16 @@
   }
   .article-item-header {
     margin-bottom: 0.25rem;
+    a {
+      display: block;
+      color: #03a9f4;
+      font-size: 1.5rem;
+      text-align: left;
+      cursor: pointer;
+      &:hover {
+        color: darken(#03a9f4, 10);
+      }
+    }
   }
   .article-item-footer {
     text-align: right;

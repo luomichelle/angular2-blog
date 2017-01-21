@@ -4,7 +4,9 @@
     <ul class="list-unstyled article-list">
       <li class="article-item" *ngFor="let article of articleList">
         <header class="article-item-header">
-          <h4><a (click)="onSelect(article)">{{article.title}}</a></h4>
+          <h4>
+            <a (click)="onSelect(article)">{{article.title}}</a>
+          </h4>
           <ul class="list-inline">
             <li class="list-inline-item">
               <i class="fa fa-calendar-o"></i> {{article.date | date:"yyyy/MM/dd"}}
