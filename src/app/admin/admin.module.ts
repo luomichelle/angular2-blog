@@ -6,6 +6,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { ArticleManageComponent } from './article-manage/article-manage.component';
 import { UserManageComponent } from './user-manage/user-manage.component';
 import { TagManageComponent } from './tag-manage/tag-manage.component';
+import { MaterialManageComponent } from './material-manage/material-manage.component';
 
 import { AdminRoutesModule } from './admin-routes.module';
 
@@ -19,7 +20,8 @@ import { AdminRoutesModule } from './admin-routes.module';
     AdminDashboardComponent,
     ArticleManageComponent,
     UserManageComponent,
-    TagManageComponent
+    TagManageComponent,
+    MaterialManageComponent
   ]
 })
 

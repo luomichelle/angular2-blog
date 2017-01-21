@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
   ]
 })
 
-export class ArticleWriteComponent {}
+export class ArticleWriteComponent {
+  // TODO: route guard.
+}
