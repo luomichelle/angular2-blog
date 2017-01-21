@@ -1,1 +1,8 @@
 <h1>Dashboard</h1>
+<nav>
+  <a routerLink="./" routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+  <a routerLink="./article" routerLinkActive="active">Manage Article</a>
+  <a routerLink="./user" routerLinkActive="active">Manage Users</a>
+</nav>
+<router-outlet></router-outlet>
