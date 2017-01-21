@@ -1,9 +1,19 @@
 <h1>Admin</h1>
-<nav class="dash-nav">
-  <a class="nav-link" routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-  <a class="nav-link" routerLink="./article" routerLinkActive="active">Articles</a>
-  <a class="nav-link" routerLink="./user" routerLinkActive="active">Users</a>
-  <a class="nav-link" routerLink="./tag" routerLinkActive="active">Tags</a>
-  <a class="nav-link" routerLink="./material" routerLinkActive="active">Materials</a>
-</nav>
+<ul class="nav dash-nav">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./article" routerLinkActive="active">Articles</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./user" routerLinkActive="active">Users</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./tag" routerLinkActive="active">Tags</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="./material" routerLinkActive="active">Materials</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>

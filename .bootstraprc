@@ -68,7 +68,9 @@ styles:
   buttons: true
 
   # Components
-  animation: true
+  alert: true
+  badge: true
+  custom: true
   dropdown: true
   button-group: true
   input-group: true
@@ -79,13 +81,12 @@ styles:
   breadcrumb: true
   pagination: true
   jumbotron: true
-  alert: true
   progress: true
   media: true
   list-group: true
   responsive-embed: true
   close: true
-  tags: true
+  transitions: true
 
   # Components w/ JavaScript
   modal: true

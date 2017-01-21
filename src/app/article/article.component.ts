@@ -26,13 +26,6 @@ export class ArticleComponent {
   }
 
   ngOnInit() {
-    // this.route
-    //   .data
-    //   .subscribe((data: any) => {
-    //     // your resolved data from route
-    //     this.localState = data.yourData;
-    //   });
-
     console.log('hello `Article` component');
     this.getArticles();
   }

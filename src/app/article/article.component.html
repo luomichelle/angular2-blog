@@ -1,5 +1,13 @@
 <div class="container" [@fadeIn]="void">
   <h1>Article List</h1>
+  <div class="tag-wrap">
+    <a href="#" class="badge badge-default">Angular2</a>
+    <a href="#" class="badge badge-primary">Webpack</a>
+    <a href="#" class="badge badge-success">TypeScript</a>
+    <a href="#" class="badge badge-info">CSS3</a>
+    <a href="#" class="badge badge-warning">HTML5</a>
+    <a href="#" class="badge badge-danger">Express</a>
+  </div>
   <article>
     <ul class="list-unstyled article-list">
       <li class="article-item" *ngFor="let article of articleList">

@@ -1,3 +1,7 @@
+.tag-wrap {
+  padding: 1rem 0 1.5rem;
+  font-size: 1rem;
+}
 .article-item {
   padding-bottom: 1rem;
   & + .article-item {
@@ -9,7 +13,7 @@
     a {
       display: block;
       color: #03a9f4;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: left;
       cursor: pointer;
       &:hover {

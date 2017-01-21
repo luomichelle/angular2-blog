@@ -26,7 +26,7 @@ export const ROUTES: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/article',
     pathMatch: 'full'
   },
   {
