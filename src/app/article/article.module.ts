@@ -5,6 +5,7 @@ import { MarkdownModule } from 'angular2-markdown';
 
 import { ArticleComponent } from './article.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { ArticleWriteComponent } from './article-write/article-write.component';
 
 import { ArticleService } from './article.service';
 
@@ -17,7 +18,8 @@ import { ArticleRoutesModule } from './article-routes.module';
   ],
   declarations: [
     ArticleComponent,
-    ArticleDetailComponent
+    ArticleDetailComponent,
+    ArticleWriteComponent
   ],
   providers: [
     ArticleService

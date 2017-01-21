@@ -4,7 +4,7 @@
   <header class="header">
     <nav class="navbar navbar-light">
       <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>-->
-      <a class="navbar-brand" [routerLink]=" ['/'] ">
+      <a class="navbar-brand" [routerLink]="['/']">
         <img class="d-inline-block align-top" style="width: 20px; height:20px;" src="{{angularclassLogo}}" alt="Logo">
         AngularBlog
       </a>
@@ -34,7 +34,7 @@
         </li>-->
       </ul>
       <form class="form-inline float-xs-right">
-        <button class="btn btn-success btn-sm">Write</button>
+        <a class="btn btn-success btn-sm nav-link-write" routerLink="/article/write" >Write</a>
       </form>
     </nav>
   </header><!-- /header -->
