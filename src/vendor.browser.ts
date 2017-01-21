@@ -16,3 +16,5 @@ import 'rxjs/add/operator/toPromise';
 
 import 'jquery';
 import 'bootstrap-loader';
+
+import 'chart.js';
