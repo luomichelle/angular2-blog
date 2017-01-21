@@ -25,7 +25,7 @@ const adminRoutes: Routes = [
         component: UserManageComponent,
       },
       {
-        path: 'dashboard',
+        path: '',
         component: AdminDashboardComponent
       }
     ]
