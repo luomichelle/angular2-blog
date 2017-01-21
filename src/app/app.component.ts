@@ -26,6 +26,7 @@ export class AppComponent {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
   name = 'Angular 2 Blog';
   url = 'https://github.com/EricThsi';
+  currDate:Date = new Date();
 
   constructor(
     public appState: AppState) {
