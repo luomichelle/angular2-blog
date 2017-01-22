@@ -1,12 +1,13 @@
 <div class="container" [@fadeIn]="void">
   <h1>Article List</h1>
   <div class="tag-wrap">
-    <a href="#" class="badge badge-default">Angular2</a>
-    <a href="#" class="badge badge-primary">Webpack</a>
-    <a href="#" class="badge badge-success">TypeScript</a>
-    <a href="#" class="badge badge-info">CSS3</a>
-    <a href="#" class="badge badge-warning">HTML5</a>
-    <a href="#" class="badge badge-danger">Express</a>
+    <a (click)="onTagFilter('')" class="badge badge-default">Default</a>
+    <a (click)="onTagFilter('angular2')" class="badge badge-success">Angular2</a>
+    <a (click)="onTagFilter('webpack')" class="badge badge-success">Webpack</a>
+    <a (click)="onTagFilter('typescript')" class="badge badge-success">TypeScript</a>
+    <a (click)="onTagFilter('css3')" class="badge badge-success">CSS3</a>
+    <a (click)="onTagFilter('html5')" class="badge badge-success">HTML5</a>
+    <a (click)="onTagFilter('express')" class="badge badge-success">Express</a>
   </div>
   <article>
     <ul class="list-unstyled article-list">

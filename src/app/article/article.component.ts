@@ -30,9 +30,9 @@ export class ArticleComponent {
     this.getArticles();
   }
 
-  getArticles(): void {
+  getArticles(tagTxt?: String): void {
     this.articleService
-        .getArticles()
+        .getArticles(tagTxt)
         .subscribe(
           articles => this.articleList = articles,
           error => this.errorMessage = <any>error
@@ -43,6 +43,11 @@ export class ArticleComponent {
 
   onSelect(article: Article) {
     this.router.navigate(['/article', article.id]);
+  }
+
+  onTagFilter(tagTxt: String) {
+    console.log('Tag filter: ' + tagTxt);
+    this.getArticles(tagTxt);
   }
 
 }

@@ -13,8 +13,9 @@ export class ArticleService {
 
   constructor(private logger: Logger, private http: Http) {}
 
-  getArticles(): Observable<Article[]> {
+  getArticles(tag?: String): Observable<Article[]> {
     this.logger.log('Getting article...');
+    console.log(tag);
     return this.http.get(this.articleUrl)
                 .map(this.extractData)
                 .catch(this.handleError);
@@ -34,7 +35,7 @@ export class ArticleService {
     } else {
       errMsg = error.message ? error.message : error.toString();
     }
-    console.log(errMsg);
+    // console.log(errMsg);
     return Observable.throw(errMsg);
   }
 }
