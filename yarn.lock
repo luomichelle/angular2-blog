@@ -3337,6 +3337,10 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+ng2-awesome-disqus@^1.0.3:
+  version "1.0.3"
+  resolved "http://registry.npm.taobao.org/ng2-awesome-disqus/download/ng2-awesome-disqus-1.0.3.tgz#e072ab226cd345bff113eecadd6070a7b59a3426"
+
 ng2-bootstrap:
   version "1.1.16-10"
   resolved "http://registry.npm.taobao.org/ng2-bootstrap/download/ng2-bootstrap-1.1.16-10.tgz#29d7a29bf4b081b00cf436c774db4e63ea812a86"
@@ -5207,13 +5211,13 @@ typedoc@^0.5.0:
     typedoc-default-themes "^0.4.0"
     typescript "2.0.6"
 
-typescript@2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.0.10.tgz#ccdd4ed86fd5550a407101a0814012e1b3fac3dd"
-
 typescript@2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.0.6.tgz#5385499ac9811508c2c43e0ea07a1ddca435e111"
+
+typescript@^2.1.5:
+  version "2.1.5"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
 
 uglify-js@2.7.x, uglify-js@^2.6, uglify-js@^2.7.5:
   version "2.7.5"
