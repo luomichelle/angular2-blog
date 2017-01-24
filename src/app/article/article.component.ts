@@ -16,6 +16,7 @@ import { fadeIn } from '../animations/fade-in';
 })
 export class ArticleComponent {
   localState: any;
+  tagList: any;
   articleList: Article[];
 
   constructor(
@@ -27,6 +28,32 @@ export class ArticleComponent {
 
   ngOnInit() {
     console.log('hello `Article` component');
+    this.tagList = [
+      {
+        id: 1,
+        tag: "Angular2"
+      },
+      {
+        id: 2,
+        tag: "Webpack"
+      },
+      {
+        id: 3,
+        tag: "TypeScript"
+      },
+      {
+        id: 4,
+        tag: "CSS3"
+      },
+      {
+        id: 5,
+        tag: "HTML5"
+      },
+      {
+        id: 6,
+        tag: "Express"
+      }
+    ]
     this.getArticles();
   }
 

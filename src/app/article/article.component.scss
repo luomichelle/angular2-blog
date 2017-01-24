@@ -3,6 +3,9 @@
   font-size: 1rem;
   a.badge {
     color: #fff;
+    &:hover {
+      background-color: #449d44;
+    }
   }
 }
 .article-item {

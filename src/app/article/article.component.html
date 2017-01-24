@@ -1,13 +1,10 @@
 <div class="container" [@fadeIn]="void">
   <h1>Article List</h1>
   <div class="tag-wrap">
-    <a (click)="onTagFilter('')" class="badge badge-default">Default</a>
-    <a (click)="onTagFilter('angular2')" class="badge badge-success">Angular2</a>
-    <a (click)="onTagFilter('webpack')" class="badge badge-success">Webpack</a>
-    <a (click)="onTagFilter('typescript')" class="badge badge-success">TypeScript</a>
-    <a (click)="onTagFilter('css3')" class="badge badge-success">CSS3</a>
-    <a (click)="onTagFilter('html5')" class="badge badge-success">HTML5</a>
-    <a (click)="onTagFilter('express')" class="badge badge-success">Express</a>
+    <a title="Default" (click)="onTagFilter('')" class="badge badge-default">Default</a>
+    <a class="badge badge-success" *ngFor="let tag of tagList" title="{{tag.tag}}" (click)="onTagFilter('tag.tag')">
+      {{tag.tag}}
+    </a>
   </div>
   <article>
     <ul class="list-unstyled article-list">
@@ -18,7 +15,7 @@
           </h4>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <i class="fa fa-calendar-o"></i> {{article.date | date:"yyyy/MM/dd"}}
+              <i class="fa fa-calendar"></i> {{article.date | date:"yyyy/MM/dd"}}
             </li>
             -
             <li class="list-inline-item">
