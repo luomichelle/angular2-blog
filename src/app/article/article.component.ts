@@ -30,6 +30,10 @@ export class ArticleComponent {
     console.log('hello `Article` component');
     this.tagList = [
       {
+        id: 0,
+        tag: "Default"
+      },
+      {
         id: 1,
         tag: "Angular2"
       },

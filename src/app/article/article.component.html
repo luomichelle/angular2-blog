@@ -1,10 +1,11 @@
 <div class="container" [@fadeIn]="void">
   <h1>Article List</h1>
   <div class="tag-wrap">
-    <a title="Default" (click)="onTagFilter('')" class="badge badge-default">Default</a>
-    <a class="badge badge-success" *ngFor="let tag of tagList" title="{{tag.tag}}" (click)="onTagFilter('tag.tag')">
-      {{tag.tag}}
-    </a>
+    <ul class="list-inline">
+      <li *ngFor="let tag of tagList" class="list-inline-item">
+        <a class="badge badge-success" title="{{tag.tag}}" (click)="onTagFilter(tag.tag)">{{tag.tag}}</a>
+      </li>
+    </ul>
   </div>
   <article>
     <ul class="list-unstyled article-list">
