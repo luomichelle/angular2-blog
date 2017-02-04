@@ -16,11 +16,11 @@
           </h4>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <i class="fa fa-calendar"></i> {{article.date | date:"yyyy/MM/dd"}}
+              <i class="fa fa-calendar"></i> {{article.updated | date:"yyyy/MM/dd"}}
             </li>
             -
             <li class="list-inline-item">
-              <i class="fa fa-user-circle"></i> {{article.author}}
+              <i class="fa fa-user-circle"></i> {{article.author_id}}
             </li>
           </ul>
         </header>
@@ -30,19 +30,22 @@
         <footer class="article-item-footer">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <i class="fa fa-book"></i> {{article.read}}
+              <i class="fa fa-book"></i> {{article.visit_count}}
             </li>
             -
             <li class="list-inline-item">
-              <i class="fa fa-comment"></i> {{article.comment}}
+              <i class="fa fa-comment"></i> {{article.comment_count}}
             </li>
             -
             <li class="list-inline-item">
-              <i class="fa fa-heart"></i> {{article.love}}
+              <i class="fa fa-heart"></i> {{article.love_count}}
             </li>
           </ul>
         </footer>
       </li>
     </ul>
+    <!--<p *ngIf="!articleList.length">
+      There is no article.
+    </p>-->
   </article>
 </div>

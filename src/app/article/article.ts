@@ -1,12 +1,15 @@
 export class Article {
   constructor(
     public id: number,
-    public author: string,
-    public date: Date,
+    public _id: string,
+    public author_id: string,
+    public updated: Date,
     public title: string,
     public content: string,
-    public read: number,
-    public comment: number,
-    public love: number
+    public images: string[],
+    public tags: string[],
+    public visit_count: number,
+    public comment_count: number,
+    public love_count: number
   ) {  }
 }

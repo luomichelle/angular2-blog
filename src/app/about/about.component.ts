@@ -26,7 +26,7 @@ export class AboutComponent {
         this.localState = data.yourData;
       });
 
-    console.log('hello `About` component');
+    // console.log('hello `About` component');
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);

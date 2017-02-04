@@ -27,7 +27,7 @@ export class ArticleComponent {
   }
 
   ngOnInit() {
-    console.log('hello `Article` component');
+    // console.log('hello `Article` component');
     this.tagList = [
       {
         id: 0,
@@ -65,7 +65,10 @@ export class ArticleComponent {
     this.articleService
         .getArticles(tagTxt)
         .subscribe(
-          articles => this.articleList = articles,
+          articles => {
+            // console.log(articles);
+            this.articleList = articles;
+          },
           error => this.errorMessage = <any>error
         );
   }
@@ -73,7 +76,7 @@ export class ArticleComponent {
   private errorMessage () {}
 
   onSelect(article: Article) {
-    this.router.navigate(['/article', article.id]);
+    this.router.navigate(['/article', article._id]);
   }
 
   onTagFilter(tagTxt: String) {

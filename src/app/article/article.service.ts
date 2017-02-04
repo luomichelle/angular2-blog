@@ -9,13 +9,14 @@ import { Article } from './article';
 @Injectable()
 
 export class ArticleService {
-  private articleUrl = 'assets/mock-data/articles.json'; // URL to web API
+  private articleUrl = 'http://localhost:3050/articles'; // URL to web API
+  // private articleUrl = 'assets/mock-data/articles.json'; // URL to web API
 
   constructor(private logger: Logger, private http: Http) {}
 
   getArticles(tag?: String): Observable<Article[]> {
-    this.logger.log('Getting article...');
-    console.log(tag);
+    // this.logger.log('Getting article...');
+    // console.log(tag);
     return this.http.get(this.articleUrl)
                 .map(this.extractData)
                 .catch(this.handleError);
@@ -23,7 +24,8 @@ export class ArticleService {
 
   private extractData(res: Response) {
     let body = res.json();
-    return body.data || {};
+    // console.log(res.json());
+    return body.data || body || [];
   }
 
   private handleError(error: Response | any) {
